@@ -25,6 +25,9 @@ class Plugin {
 		$deal_post_type = new Deal_Post_Type();
 		$deal_post_type->init();
 
+		$deal_category_taxonomy = new Deal_Category_Taxonomy();
+		$deal_category_taxonomy->init();
+
 		$deals_shortcode = new Deals_Shortcode();
 		$deals_shortcode->init();
 
