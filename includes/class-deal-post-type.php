@@ -72,7 +72,7 @@ class Deal_Post_Type {
 			'hierarchical'       => false,
 			'menu_position'      => 25,
 			'menu_icon'          => 'dashicons-tickets-alt',
-			'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'author' ),
+			'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'author', 'comments', 'revisions', 'custom-fields' ),
 		);
 
 		register_post_type( 'deal', $args );
