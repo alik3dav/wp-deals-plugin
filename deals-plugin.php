@@ -30,6 +30,7 @@ require_once DEALS_PLUGIN_PATH . 'includes/class-activator.php';
 require_once DEALS_PLUGIN_PATH . 'includes/class-deactivator.php';
 require_once DEALS_PLUGIN_PATH . 'includes/class-plugin.php';
 require_once DEALS_PLUGIN_PATH . 'includes/class-deal-post-type.php';
+require_once DEALS_PLUGIN_PATH . 'includes/class-deals-shortcode.php';
 
 /**
  * Runs plugin activation tasks.

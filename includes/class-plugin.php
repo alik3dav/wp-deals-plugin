@@ -25,6 +25,9 @@ class Plugin {
 		$deal_post_type = new Deal_Post_Type();
 		$deal_post_type->init();
 
+		$deals_shortcode = new Deals_Shortcode();
+		$deals_shortcode->init();
+
 		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 	}
 
