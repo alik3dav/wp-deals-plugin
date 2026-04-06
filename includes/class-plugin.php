@@ -34,6 +34,12 @@ class Plugin {
 		$deals_settings_page = new Deals_Settings_Page();
 		$deals_settings_page->init();
 
+		$deal_votes = new Deal_Votes();
+		$deal_votes->init();
+
+		$deal_votes_rest = new Deal_Votes_REST( $deal_votes );
+		$deal_votes_rest->init();
+
 		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 	}
 
