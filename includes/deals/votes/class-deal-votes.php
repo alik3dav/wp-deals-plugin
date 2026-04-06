@@ -110,11 +110,28 @@ class Deal_Votes {
 					'show_in_rest'      => true,
 					'single'            => true,
 					'type'              => 'number',
-					'sanitize_callback' => 'floatval',
+					'sanitize_callback' => array( $this, 'sanitize_numeric_meta' ),
 					'auth_callback'     => '__return_true',
 				)
 			);
 		}
+	}
+
+	/**
+	 * Sanitize numeric meta values.
+	 *
+	 * WordPress passes additional context args to sanitize callbacks, so this
+	 * method accepts them even though only the first value is used.
+	 *
+	 * @param mixed  $meta_value    Meta value to sanitize.
+	 * @param string $meta_key      Meta key.
+	 * @param string $object_type   Object type.
+	 * @param string $object_subtype Object subtype.
+	 *
+	 * @return float
+	 */
+	public function sanitize_numeric_meta( $meta_value, $meta_key = '', $object_type = '', $object_subtype = '' ) {
+		return (float) $meta_value;
 	}
 
 	/**
