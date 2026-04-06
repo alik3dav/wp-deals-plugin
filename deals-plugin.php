@@ -33,6 +33,9 @@ require_once DEALS_PLUGIN_PATH . 'includes/class-deal-post-type.php';
 require_once DEALS_PLUGIN_PATH . 'includes/class-deal-category-taxonomy.php';
 require_once DEALS_PLUGIN_PATH . 'includes/class-deals-shortcode.php';
 require_once DEALS_PLUGIN_PATH . 'includes/class-deals-settings-page.php';
+require_once DEALS_PLUGIN_PATH . 'includes/deals/votes/class-deal-votes.php';
+require_once DEALS_PLUGIN_PATH . 'includes/deals/votes/class-deal-votes-rest.php';
+require_once DEALS_PLUGIN_PATH . 'includes/deals/votes/template-tags.php';
 
 /**
  * Runs plugin activation tasks.
