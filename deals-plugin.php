@@ -29,6 +29,7 @@ define( 'DEALS_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 require_once DEALS_PLUGIN_PATH . 'includes/class-activator.php';
 require_once DEALS_PLUGIN_PATH . 'includes/class-deactivator.php';
 require_once DEALS_PLUGIN_PATH . 'includes/class-plugin.php';
+require_once DEALS_PLUGIN_PATH . 'includes/class-deal-post-type.php';
 
 /**
  * Runs plugin activation tasks.
