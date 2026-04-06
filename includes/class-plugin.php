@@ -28,6 +28,9 @@ class Plugin {
 		$deals_shortcode = new Deals_Shortcode();
 		$deals_shortcode->init();
 
+		$deals_settings_page = new Deals_Settings_Page();
+		$deals_settings_page->init();
+
 		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 	}
 
