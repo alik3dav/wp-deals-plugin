@@ -22,6 +22,9 @@ class Plugin {
 	 * @return void
 	 */
 	public function init() {
+		$deal_post_type = new Deal_Post_Type();
+		$deal_post_type->init();
+
 		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 	}
 
